@@ -1,45 +1,41 @@
-🚀 3-Tier Banking App Deployment on AWS EKS using DevSecOps
-A production-grade simulation of a secure, scalable, and automated CI/CD pipeline deploying a Java-based 3-tier banking application to AWS EKS using GitOps and monitoring tools.
+3-Tier Banking Application Deployment on AWS EKS Using DevSecOps
+This project simulates a production-grade deployment of a secure, scalable, and automated CI/CD pipeline for a Java-based 3-tier banking application. It uses DevSecOps practices to deploy to AWS EKS with GitOps-based delivery and integrated monitoring.
 
-🛠️ Tech Stack
+Tech Stack
 Source Control: GitHub
 
 CI/CD Pipeline: Jenkins, ArgoCD (GitOps)
 
-Security: SonarQube, Trivy, OWASP Dependency-Check
+Security Tools: SonarQube, Trivy, OWASP Dependency-Check
 
-Infrastructure: AWS EKS, Terraform, Docker, Helm
+Infrastructure & Orchestration: AWS EKS, Terraform, Docker, Helm
 
-Monitoring: Prometheus & Grafana
+Monitoring & Observability: Prometheus, Grafana
 
-✅ Key Features
-Automated CI/CD pipeline with version-controlled deployments using GitOps
+Key Features
+Automated CI/CD pipeline with GitOps-driven deployment using ArgoCD
 
-Static Code & Image Scanning integrated into Jenkins pipeline
+Static code analysis and container image scanning integrated into Jenkins
 
-Zero Downtime Deployments on Kubernetes (EKS)
+Zero-downtime deployments on Kubernetes (EKS)
 
-Live Monitoring & Alerting using Grafana dashboards
+Real-time monitoring and alerting with Grafana dashboards
 
-Email Notifications on build and deployment status
+Email notifications for build and deployment status
 
-📷 Preview
+Pipeline Workflow
+End-to-end flow: Build → Scan → Push → Deploy → Monitor
 
-End-to-End Pipeline: Build → Scan → Push → Deploy → Monitor
-
-⚙️ Project Highlights
-Configured Jenkins master/agent architecture on EC2
+Project Highlights
+Set up Jenkins in a master-agent architecture on EC2
 
 Deployed ArgoCD for GitOps-style delivery to EKS
 
-Integrated SonarQube & Trivy in CI pipeline for quality and security
+Integrated SonarQube and Trivy into the CI pipeline for code quality and security
 
-Set up Prometheus & Grafana for cluster and app observability
+Configured Prometheus and Grafana for cluster and application observability
 
-Provisioned infrastructure using Terraform for repeatability
+Used Terraform to provision infrastructure, ensuring repeatability and scalability
 
-📌 About This Project
-This project replicates enterprise DevSecOps workflows. It’s designed as a hands-on implementation to mirror production environments, built independently using real AWS infrastructure for deep learning and demonstration.
-
-🧹 Clean-Up
-eksctl delete cluster --name=bankapp --region=us-west-1
+About the Project
+This project replicates enterprise-level DevSecOps workflows and is designed to mirror real-world production environments. It was independently built using actual AWS infrastructure to support hands-on learning and demonstration of modern CI/CD practices.
